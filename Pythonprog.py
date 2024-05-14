@@ -7,10 +7,11 @@ import pandas as pd #it use to convert sql data to HTML
 import mysql.connector
 
 load_dotenv()
-client_id = 36a482f0-ad1d-415c-aa8e-2780a41a0c10
-tenant_id = 50910f11-83a2-4159-bd1b-f0aa1521666e
-client_secret =IbZ8Q~mKtZt1Yz.a9gU2M9Lk~IiaEZHAi95mqcXU
-vault_url = https://keyvalueproj3.vault.azure.net/
+client_id = os.environ['AZURE_CLIENT_ID']
+tenant_id = os.environ['AZURE_TENANT_ID']
+client_secret = os.environ['AZURE_CLIENT_SECRET']
+vault_url = os.environ["AZURE_VAULT_URL"]
+
 
 secret_name = "dbString"
 
