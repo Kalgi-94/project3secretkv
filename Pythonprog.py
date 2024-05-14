@@ -7,10 +7,10 @@ import pandas as pd #it use to convert sql data to HTML
 import mysql.connector
 
 load_dotenv()
-client_id = os.environ['36a482f0-ad1d-415c-aa8e-2780a41a0c10']
-tenant_id = os.environ['50910f11-83a2-4159-bd1b-f0aa1521666e']
-client_secret = os.environ['2F88Q~KTHGSVFSviJ6qx0BU6Lf4.O~6CCd-r_aNw']
-vault_url = os.environ["https://keyvalueproj3.vault.azure.net/"]
+client_id = '36a482f0-ad1d-415c-aa8e-2780a41a0c10'
+tenant_id = '50910f11-83a2-4159-bd1b-f0aa1521666e'
+client_secret ='2F88Q~KTHGSVFSviJ6qx0BU6Lf4.O~6CCd-r_aNw'
+vault_url = "https://keyvalueproj3.vault.azure.net/"
 
 secret_name = "dbString"
 
